@@ -1,38 +1,91 @@
-.App {
+.tab ul {
+  list-style-type: none;
+}
+
+.tab ul li {
+  display: inline;
+  color: #494545;
+  ;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tab ul li:hover {
+  color: black;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.show-content {
+  display: block;
+}
+
+.col-3.tab.p-5 {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(224, 229, 233);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin: auto;
+  background-color: rgb(220, 220, 233);
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.d-flex li {
+  font-size: 18px;
+  /* Kích thước phông chữ */
+  font-weight: bold;
+  /* Độ đậm của phông chữ */
+}
+
+
+
+li:after {
+  content: "";
+  position: absolute;
+  background-color: #3948f3;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+li:hover:after {
+  width: 100%;
+}
+
+.h1-html {
+  color: orangered;
+}
+
+.h1-css {
+  color: #4857f1;
+}
+
+.h1-js {
+  color: rgb(188, 188, 30);
+}
+
+.h1-reactjs {
+  color: #1321b3;
 }
